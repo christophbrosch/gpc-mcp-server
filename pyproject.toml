@@ -1,0 +1,17 @@
+[project]
+name = "gpc-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "extruct>=0.18.0",
+    "fastmcp>=2.1.1",
+    "gpc",
+    "requests>=2.32.3",
+    "torch>=2.6.0",
+    "transformers>=4.51.3",
+]
+
+[tool.uv.sources]
+gpc = { git = "https://gitlab.rlp.net/ke3p/gpc", rev = "english" }
