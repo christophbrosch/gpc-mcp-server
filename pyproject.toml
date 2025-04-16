@@ -14,4 +14,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-gpc = { git = "https://gitlab.rlp.net/ke3p/gpc", rev = "english" }
+gpc = { git = "https://gitlab.rlp.net/KE3P/gpc", rev = "english" }

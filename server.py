@@ -122,7 +122,10 @@ def get_jsonld_product_data(url: str) -> dict:
     ]  # Hardcoded for MyTime
 
 
-@mcp.tool("search_for_bricks", description="search for bricks")
+@mcp.tool(
+    "search_for_bricks",
+    description="search for bricks, consider the query string as keywords. Duplicates are removed.",
+)
 def search_for_bricks(query: str) -> list[Brick]:
     """Search for bricks."""
     return search_bricks(query)
