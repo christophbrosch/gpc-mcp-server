@@ -22,7 +22,7 @@ mcp = FastMCP(
         "torch",
         "transformers",
         "extruct",
-        "git+https://gitlab.rlp.net/KE3P/gpc@english",
+        "git+https://gitlab.rlp.net/KE3P/gpc@english-food-only",
     ],
 )
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -54,4 +54,4 @@ def get_bricks_for_class(brick_code: str | int) -> list[Brick]:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http")
+    mcp.run(transport="streamable-http", host="0.0.0.0")
