@@ -191,7 +191,7 @@ wheels = [
 [[package]]
 name = "gpc"
 version = "0.0.1"
-source = { git = "https://gitlab.rlp.net/KE3P/gpc?rev=english#f38909ea5b5ca92318ad6209a6f66e0a27614bb1" }
+source = { git = "https://gitlab.rlp.net/ke3p/gpc?rev=english-food-only#47a7bd9e5c8fe097ae954567318249eddb7056cc" }
 dependencies = [
     { name = "pandas" },
 ]
@@ -213,7 +213,7 @@ dependencies = [
 requires-dist = [
     { name = "extruct", specifier = ">=0.18.0" },
     { name = "fastmcp", specifier = ">=2.5.2" },
-    { name = "gpc", git = "https://gitlab.rlp.net/KE3P/gpc?rev=english" },
+    { name = "gpc", git = "https://gitlab.rlp.net/ke3p/gpc?rev=english-food-only" },
     { name = "requests", specifier = ">=2.32.3" },
     { name = "torch", specifier = ">=2.6.0" },
     { name = "transformers", specifier = ">=4.51.3" },

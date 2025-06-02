@@ -9,7 +9,7 @@ extruct==0.18.0
 fastmcp==2.5.2
 filelock==3.18.0
 fsspec==2025.3.2
-gpc @ git+https://gitlab.rlp.net/KE3P/gpc@f38909ea5b5ca92318ad6209a6f66e0a27614bb1
+gpc @ git+https://gitlab.rlp.net/ke3p/gpc@47a7bd9e5c8fe097ae954567318249eddb7056cc
 h11==0.16.0
 html-text==0.7.0
 html5lib==1.1
