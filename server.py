@@ -2,6 +2,8 @@
 from fastmcp import FastMCP
 import requests
 import extruct
+from starlette.requests import Request
+from starlette.responses import PlainTextResponse
 
 import torch
 
@@ -51,6 +53,11 @@ def get_bricks_for_class(brick_code: str | int) -> list[Brick]:
     """Get all bricks for a given class."""
     class_code = get_brick_class(brick_code).class_code
     return get_class_bricks(class_code)
+
+
+@mcp.custom_route("/health", methods=["GET"])
+async def health_check(request: Request) -> PlainTextResponse:
+    return PlainTextResponse("OK")
 
 
 if __name__ == "__main__":
